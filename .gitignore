@@ -1,0 +1,5 @@
+output/*.tmp
+__pycache__/
+.pytest_cache/
+.env
+data/places/
