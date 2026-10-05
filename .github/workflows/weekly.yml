@@ -1,0 +1,53 @@
+name: Weekly MCA leads
+
+on:
+  schedule:
+    - cron: "17 3 * * 1"      # every Monday 03:17 UTC (08:17 Pakistan time)
+  workflow_dispatch: {}        # "Run workflow" button for a manual run
+
+permissions:
+  contents: write              # lets the job commit the new files and history
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt pytest
+      - run: python -m pytest -q tests
+      - name: Month key for the places cache
+        run: echo "MONTH=$(date -u +%Y-%m)" >> "$GITHUB_ENV"
+      - name: Restore free business-places data (rebuilt monthly)
+        uses: actions/cache@v4
+        with:
+          path: data/places
+          key: overture-places-${{ env.MONTH }}
+          restore-keys: overture-places-
+      - name: Pull filings, find websites/emails, write files
+        env:
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}         # free; recommended
+          SERPER_API_KEY: ${{ secrets.SERPER_API_KEY }}               # optional, free 2,500 once
+          HUNTER_API_KEY: ${{ secrets.HUNTER_API_KEY }}               # optional, free 50/month
+          MILLIONVERIFIER_API_KEY: ${{ secrets.MILLIONVERIFIER_API_KEY }}  # optional, free 100
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          REPORT_TO: ${{ secrets.REPORT_TO }}
+        run: python -m mca_leads.run --days 10 --states CO,CT,RI,OR
+      - uses: actions/upload-artifact@v4
+        with:
+          name: mca-leads
+          path: output/
+          retention-days: 90
+      - name: Save files and history to the repo
+        run: |
+          git config user.name "mca-leads-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add output data/seen.csv data/funders.csv inbox
+          git commit -m "Weekly MCA leads $(date -u +%F)" || echo "nothing new"
+          git push
