@@ -1,0 +1,61 @@
+pattern,type,note
+LCF Group,mca,seed list - known MCA / revenue-based funder; check
+CFG Merchant Solutions,mca,seed list - known MCA / revenue-based funder; check
+Seamless Funding,mca,seed list - known MCA / revenue-based funder; check
+Funding Metrics,mca,seed list - known MCA / revenue-based funder; check
+Parafin,mca,seed list - known MCA / revenue-based funder; check
+Fundo,mca,seed list - known MCA / revenue-based funder; check
+Fora Financial,mca,seed list - known MCA / revenue-based funder; check
+Kapitus,mca,seed list - known MCA / revenue-based funder; check
+Rapid Finance,mca,seed list - known MCA / revenue-based funder; check
+Credibly,mca,seed list - known MCA / revenue-based funder; check
+Mulligan Funding,mca,seed list - known MCA / revenue-based funder; check
+Libertas Funding,mca,seed list - known MCA / revenue-based funder; check
+Everest Business Funding,mca,seed list - known MCA / revenue-based funder; check
+Yellowstone Capital,mca,seed list - known MCA / revenue-based funder; check
+Pearl Capital,mca,seed list - known MCA / revenue-based funder; check
+Forward Financing,mca,seed list - known MCA / revenue-based funder; check
+Bitty Advance,mca,seed list - known MCA / revenue-based funder; check
+Byzfunder,mca,seed list - known MCA / revenue-based funder; check
+Fox Capital Group,mca,seed list - known MCA / revenue-based funder; check
+Cloudfund,mca,seed list - known MCA / revenue-based funder; check
+Velocity Capital Group,mca,seed list - known MCA / revenue-based funder; check
+Expansion Capital Group,mca,seed list - known MCA / revenue-based funder; check
+Fundkite,mca,seed list - known MCA / revenue-based funder; check
+Greenbox Capital,mca,seed list - known MCA / revenue-based funder; check
+Kalamata Capital,mca,seed list - known MCA / revenue-based funder; check
+Mantis Funding,mca,seed list - known MCA / revenue-based funder; check
+Newco Capital,mca,seed list - known MCA / revenue-based funder; check
+Unique Funding Solutions,mca,seed list - known MCA / revenue-based funder; check
+Wynwood Capital,mca,seed list - known MCA / revenue-based funder; check
+Vox Funding,mca,seed list - known MCA / revenue-based funder; check
+Smart Business Funding,mca,seed list - known MCA / revenue-based funder; check
+Lendini,mca,seed list - known MCA / revenue-based funder; check
+Shopify Capital,mca,seed list - known MCA / revenue-based funder; check
+Square Capital,mca,seed list - known MCA / revenue-based funder; check
+Stripe Capital,mca,seed list - known MCA / revenue-based funder; check
+Amazon Capital,mca,seed list - known MCA / revenue-based funder; check
+Paypal Working Capital,mca,seed list - known MCA / revenue-based funder; check
+Agile Capital Funding,mca,seed list - known MCA / revenue-based funder; check
+Agile Lending,mca,seed list - known MCA / revenue-based funder; check
+Merit Business Funding,mca,seed list - known MCA / revenue-based funder; check
+MicroAdvance Funding,mca,seed list - known MCA / revenue-based funder; check
+SMP Advance Funding,mca,seed list - known MCA / revenue-based funder; check
+LEAF Capital Funding,ignore,"equipment, bank, tax or SBA lender - not MCA"
+Snap-on Credit,ignore,"equipment, bank, tax or SBA lender - not MCA"
+Sheffield Financial,ignore,"equipment, bank, tax or SBA lender - not MCA"
+Caterpillar Financial,ignore,"equipment, bank, tax or SBA lender - not MCA"
+Kubota Credit,ignore,"equipment, bank, tax or SBA lender - not MCA"
+Deere,ignore,"equipment, bank, tax or SBA lender - not MCA"
+GoodLeap,ignore,"equipment, bank, tax or SBA lender - not MCA"
+Small Business Administration,ignore,"equipment, bank, tax or SBA lender - not MCA"
+Internal Revenue Service,ignore,"equipment, bank, tax or SBA lender - not MCA"
+Wells Fargo Vendor,ignore,"equipment, bank, tax or SBA lender - not MCA"
+DLL Finance,ignore,"equipment, bank, tax or SBA lender - not MCA"
+De Lage Landen,ignore,"equipment, bank, tax or SBA lender - not MCA"
+CNH Industrial,ignore,"equipment, bank, tax or SBA lender - not MCA"
+AGCO Finance,ignore,"equipment, bank, tax or SBA lender - not MCA"
+Navitas Credit,ignore,"equipment, bank, tax or SBA lender - not MCA"
+Stearns Bank Equipment,ignore,"equipment, bank, tax or SBA lender - not MCA"
+TD Equipment Finance,ignore,"equipment, bank, tax or SBA lender - not MCA"
+Sungage Financial,ignore,"equipment, bank, tax or SBA lender - not MCA"
